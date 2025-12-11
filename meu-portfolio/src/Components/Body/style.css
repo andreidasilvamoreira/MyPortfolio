@@ -53,16 +53,24 @@
     align-items: center;
 }
 
+.projetos:hover {
+    background-color: #2e6aca;
+}
+
 .contato {
     background-color: white;
     color: black;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
+}
+
+.contato:hover {
+    background-color: rgb(209, 209, 209);
 }
 
 .botao-pai {
     display: flex;
     gap: 3vh;
-    text-decoration: none;
 }

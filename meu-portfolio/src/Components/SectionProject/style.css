@@ -10,8 +10,9 @@
     background: #171A26;
     padding: 2rem;
     border-radius: 1rem;
+    min-height: 40vh;
     width: 15vw;
-    height: 40vh;
+    height: auto;
     transition: 0.3s ease;
     text-align: left;
 }
@@ -76,7 +77,7 @@
     width: 10vw;
     height: 6vh;
     border: none;
-    margin-top: 5vh;
+    margin-top: 3vh;
     border-radius: 1vh;
     background-color: #2765ca;
     font-size: 1.5rem;
