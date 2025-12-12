@@ -1,18 +1,27 @@
 .nav-bar-pai {
-    display: flex;
-    justify-content: space-around;
-    margin-left: 12vw;
-    margin-top: 5vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 4vh;
+    background-color: #0A0A1A;
+    z-index: 1000;
     font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
 }
 
-.div-invisivel {
-    width: 50%;
+.navContent {
+    display: flex;
+    justify-content: flex-end;
+    gap: 4vh;
+    width: 85vw;
 }
 
 .Contato,
 .Skills,
-.Projeto,
+.Projetos,
 .Sobre {
     text-decoration: none;
     color: #dbdbdb;
@@ -26,7 +35,7 @@
     color: white;
 }
 
-.Projeto:hover {
+.Projetos:hover {
     color: white;
 }
 

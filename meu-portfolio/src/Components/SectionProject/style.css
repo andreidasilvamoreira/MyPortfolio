@@ -3,7 +3,6 @@
     justify-content: center;
     gap: 2rem;
     padding: 2rem;
-    margin-bottom: 17vh;
 }
 
 .card {
@@ -15,6 +14,10 @@
     height: auto;
     transition: 0.3s ease;
     text-align: left;
+}
+
+#projetos {
+    scroll-margin-top: 13vh;
 }
 
 .card:nth-child(2) {
@@ -31,6 +34,7 @@
 
 .div-pai-de-todos-projetos {
     margin-top: 35vh;
+
 }
 
 .div-h1 {

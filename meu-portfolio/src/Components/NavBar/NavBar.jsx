@@ -5,11 +5,12 @@ export default function NavBar() {
     return (
         <>
             <div className="nav-bar-pai">
-                <A href="projetos" className="projetos">Projects</A>
-                <A href="skills" className="Skills">Skills</A>
-                <A href="sobre" className="Sobre">About</A>
-                <A href="contato" className="Contato">Contacts</A>
-                <div className="div-invisivel"></div>
+                <div className="navContent">
+                    <A href="#projetos" className="Projetos">Projects</A>
+                    <A href="#skills" className="Skills">Skills</A>
+                    <A href="#sobre" className="Sobre">About</A>
+                    <A href="#contato" className="Contato">Contacts</A>
+                </div>
             </div>
         </>
     )

@@ -1,0 +1,68 @@
+.div-pai-Skills {
+    width: 20%;
+    height: 45vh;
+    border-radius: 2vh;
+    background-color: #12151f;
+    padding: 6vh;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 5vw;
+}
+
+.skill-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    background-color: #0A0A1A;
+    margin-bottom: 7vh;
+}
+
+.softSkills {
+    display: flex;
+    flex-direction: column;
+    background-color: #12151f;
+    width: 25%;
+    height: 45vh;
+    padding: 6vh;
+    border-radius: 2vh;
+}
+
+.h1-skills {
+    font-weight: 400;
+}
+
+.back-end,
+.front-end,
+.ferramentas,
+.banco-de-dados,
+.metodologia {
+    font-weight: 400;
+    font-size: 2.5rem;
+}
+
+.pai-de-todos-skills {
+    margin-top: 35vh;
+}
+
+.div-centralizar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10vh;
+    gap: 10vh;
+}
+
+.container-skill {
+    display: flex;
+    gap: 1vh;
+    margin-top: 2vh;
+    margin-bottom: 4vh;
+    flex-wrap: wrap;
+}
+
+.card-skill-skill {
+    background-color: #202431;
+    padding: 1.5vh;
+    border-radius: 12%;
+}
