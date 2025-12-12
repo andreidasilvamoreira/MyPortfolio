@@ -1,4 +1,5 @@
 import "./style.css"
+import Card from "./card"
 
 export default function Projects() {
 
@@ -7,26 +8,27 @@ export default function Projects() {
             <section id="projetos" className="div-pai-de-todos-projetos">
                 <div className="div-h1"><h1 className="h1-projetos">Projects</h1></div>
                 <div className="div-pai-projetos">
-                    <div class="card">
-                        <h3 className="titulo-projeto">API de Restaurante</h3>
-                        <p className="p-projeto">CRUD completo para pedidos, clientes e itens de menu</p>
-                        <div className="sessao-skill"><p className="card-skill">Laravel</p><p className="card-skill">MySQL</p></div>
-                        <button className="btn-projeto">Ver Projeto</button>
-                    </div>
+                    
+                    <Card
+                        title="API de Restaurante"
+                        descricao="CRUD completo para pedidos, clientes e itens de menu"
+                        skills={["Laravel", "MySQL"]}
+                        buttonText="Ver Projeto"
+                    ></Card>
 
-                    <div class="card">
-                        <h3 className="titulo-projeto">E-commerce Full Stack</h3>
-                        <p className="p-projeto">Carrinho, login com token e gerenciamento de produtos</p>
-                        <div className="sessao-skill"><p className="card-skill">Laravel</p><p className="card-skill">React</p><p className="card-skill">MySQL</p></div>
-                        <button className="btn-projeto">Ver Projeto</button>
-                    </div>
+                    <Card
+                        title="E-commerce Full Stack"
+                        descricao="Carrinho, login com token e gerenciamento de produtos"
+                        skills={["Laravel", "React", "MySQL"]}
+                        buttonText="Ver Projeto"
+                    ></Card>
 
-                    <div class="card">
-                        <h3 className="titulo-projeto">API Biblioteca</h3>
-                        <p className="p-projeto">Gerenciamento de livros, autores, categorias e validações</p>
-                        <div className="sessao-skill"><p className="card-skill">Laravel</p></div>
-                        <button className="btn-projeto">Ver Projeto</button>
-                    </div>
+                    <Card
+                        title="API Biblioteca"
+                        descricao="Gerenciamento de livros, autores, categorias e validações"
+                        skills={["Laravel"]}
+                        buttonText="Ver Projeto"
+                    ></Card>
                 </div>
             </section>
         </>

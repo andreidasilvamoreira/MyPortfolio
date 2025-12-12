@@ -1,16 +1,17 @@
-import "./style.css"
+import P from "./SubComponents/P-component"
+import A from "./SubComponents/A-component"
+import "../Body/style.css"
 
 export default function Body() {
     return (
         <>
             <div className="div-body-pai">
                 <div className="div-descricao"><h1 className="h1-nome">Andrei Moreira</h1>
-                    <p className="p">Backend-Focused Full Stack Developer
-                    </p>
-                    <p className="p descricao">I build fast, secure, and scalable APIs using PHP, Laravel, MySQL, and React.</p>
+                    <P className="p">Backend-Focused Full Stack Developer</P>
+                    <P className="p descricao">I build fast, secure, and scalable APIs using PHP, Laravel, MySQL, and React.</P>
                     <div className="botao-pai">
-                        <a href="#projetos" className="btn projetos">View Projects</a>
-                        <a href="#contato" className="btn contato">Talk to me</a>
+                        <A href="projetos" className="btn projetos">View Projects</A>
+                        <A href="contato" className="btn contato">Talk to me</A>
                     </div>
                 </div>
                 <div><img className="minha-foto" src="/eu.jpeg" alt="" /></div>

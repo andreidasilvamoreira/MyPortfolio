@@ -1,4 +1,3 @@
-import './App.css'
 import Body from './Components/Body/Body'
 import NavBar from './Components/NavBar/NavBar'
 import Projects from './Components/SectionProject/Project'
