@@ -11,7 +11,7 @@ export default function Body() {
                     <P className="p descricao">I build fast, secure, and scalable APIs using PHP, Laravel, MySQL, and React.</P>
                     <div className="botao-pai">
                         <A href="#projetos" className="btn projetos">View Projects</A>
-                        <A href="#contato" className="btn contato">Talk to me</A>
+                        <A href="#contato" className="btn contato-body">Talk to me</A>
                     </div>
                 </div>
                 <div><img className="minha-foto" src="/eu.jpeg" alt="" /></div>

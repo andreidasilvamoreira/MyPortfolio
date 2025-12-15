@@ -1,0 +1,134 @@
+.div-contato-pai-de-todos {
+    margin-bottom: 20vh;
+}
+
+.contato-pai {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 38%;
+    margin-left: 30vw;
+    margin-bottom: 8vh;
+}
+
+.div-contato-form {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contato {
+    background-color: #0A0A1A;
+    font-size: 2rem;
+    margin-bottom: 2vh;
+}
+
+.h1-contato {
+    font-weight: 400;
+}
+
+.div-contato {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.p-contato {
+    color: #c8c8c9;
+    text-align: center;
+}
+
+.formulario-contato {
+    display: flex;
+    flex-direction: column;
+    background-color: #0A0A1A;
+    width: 100%;
+    gap: 1.5vh;
+}
+
+h4 {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.link {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    margin-bottom: 2vh;
+    font-size: 1.2rem;
+}
+
+.link-linkedin,
+.link-github {
+    text-decoration: none;
+}
+
+.link-linkedin:hover {
+    color: #cacaca;
+}
+
+.link-github:hover {
+    color: #cacaca;
+}
+
+.div-formulario {
+    border: 1px solid rgba(207, 207, 207, 0.15);
+    padding: 2.4vh;
+    height: 100%;
+    border-radius: 1vh;
+    width: 20vw;
+}
+
+.input {
+    background-color: #0F1320;
+    border: 1px solid rgba(207, 207, 207, 0.15);
+    padding: 1.4vh;
+    font-size: 1rem;
+    border-radius: 1vh;
+    height: 100%;
+
+}
+
+.nome:focus,
+.email:focus,
+.mensagem:focus {
+    outline: none;
+    transform: scale(1.01);
+    border-color: #2f3342;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.15);
+}
+
+.nome,
+.email,
+.mensagem {
+    transition-delay: 0.15s ease;
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.mensagem {
+    height: 10vh;
+    resize: none;
+    text-align: left;
+}
+
+.btn-enviar {
+    background-color: #222633;
+    border-radius: 1vh;
+    border: none;
+    height: 4vh;
+    cursor: pointer;
+    transition:
+        transform 0.3s cubic-bezier(.4,0,.2,1),
+        box-shadow 0.3s ease,
+        background 0.3s ease;
+}
+
+.btn-enviar:hover {
+    background-color: #1e212e;
+    transform: scale(1.03);
+    border-color: #2f3342;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.15);
+}

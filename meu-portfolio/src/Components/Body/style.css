@@ -58,7 +58,7 @@
     background-color: #2e6aca;
 }
 
-.contato {
+.contato-body {
     background-color: white;
     color: black;
     display: flex;
@@ -67,7 +67,7 @@
     text-decoration: none;
 }
 
-.contato:hover {
+.contato-body:hover {
     background-color: rgb(209, 209, 209);
 }
 
