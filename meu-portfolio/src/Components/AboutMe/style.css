@@ -1,0 +1,54 @@
+.div-pai-de-todos-sobre-mim {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin-top: 50vh;
+    margin-bottom: 50vh;
+}
+
+.about-container {
+    width: 100%;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    align-items: center;
+}
+
+.about-text h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    font-weight: 400;
+}
+
+.about-text p {
+    font-size: 1.2rem;
+}
+
+.p-descricao {
+    max-width: 70vh;
+    line-height: 1.8;
+    opacity: 0.9;
+}
+
+.about-visual {
+    position: relative;
+    min-height: 420px; 
+    opacity: 0.90;
+    background-image:
+        linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px);
+    background-size: 65px 64px;
+}
+
+.about-visual::after {
+    content: "";
+    position: absolute;
+    width: 520px;
+    height: 520px;
+    border: 1px solid rgba(255,255,255,0.07);
+    border-radius: 50%;
+    right: -260px;
+    bottom: -260px;
+    opacity: 0.6;
+}

@@ -1,3 +1,4 @@
+import About from './Components/AboutMe/About'
 import Body from './Components/Body/Body'
 import NavBar from './Components/NavBar/NavBar'
 import Projects from './Components/SectionProject/Project'
@@ -12,6 +13,7 @@ function App() {
         <Body/>
         <Projects/>
         <Skills/>
+        <About/>
       </div> 
     </>
   )

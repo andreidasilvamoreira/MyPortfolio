@@ -43,7 +43,7 @@
 }
 
 .pai-de-todos-skills {
-    margin-top: 35vh;
+    margin-top: 50vh;
 }
 
 .div-centralizar {
@@ -66,4 +66,8 @@
     background-color: #202431;
     padding: 1.5vh;
     border-radius: 12%;
+}
+
+#skills {
+    scroll-margin-top: 13vh;
 }
