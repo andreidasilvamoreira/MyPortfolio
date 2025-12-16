@@ -9,10 +9,10 @@ export default function NavBar() {
                     <i className="fa-solid fa-house"></i>
                 </a>
                 <div className="navContent">
-                    <A href="#projetos" className="Projetos">Projects</A>
-                    <A href="#skills" className="Skills">Skills</A>
-                    <A href="#sobre" className="Sobre">About</A>
-                    <A href="#contato" className="Contato">Contacts</A>
+                    <A href="#projetos" className="Projetos">Projetos</A>
+                    <A href="#skills" className="Skills">Habilidades</A>
+                    <A href="#sobre" className="Sobre">Sobre</A>
+                    <A href="#contato" className="Contato">Contatos</A>
                 </div>
             </div>
         </>

@@ -5,7 +5,7 @@ export default function Skills() {
     return (
         <section id="skills" className="pai-de-todos-skills">
             <div className="skill-div">
-                <h1 className="h1-skills">Hard Skills</h1>
+                <h1 className="h1-skills">Habilidades Técnicas</h1>
             </div>
 
             <div className="div-centralizar">

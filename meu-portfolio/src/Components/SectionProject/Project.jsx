@@ -6,7 +6,7 @@ export default function Projects() {
     return (
         <>
             <section id="projetos" className="div-pai-de-todos-projetos">
-                <div className="div-h1"><h1 className="h1-projetos">Projects</h1></div>
+                <div className="div-h1"><h1 className="h1-projetos">Projetos</h1></div>
                 <div className="div-pai-projetos">
                     
                     <Card
