@@ -1,4 +1,4 @@
-import { useLanguage } from "../../Hooks/useLanguage";
+import { useLanguage } from "../../shared/Hooks/useLanguage";
 import Div, {DivAux} from "./div-links";
 import Form from "./formulario";
 import "./style.css";

@@ -1,7 +1,7 @@
 import "./style.css"
 import A from "../Body/SubComponents/A-component"
 import { LanguageSelect } from "./SelectLanguage"
-import { useLanguage } from "../../Hooks/useLanguage";
+import { useLanguage } from "../../shared/Hooks/useLanguage";
 
 export default function NavBar() {
     const { t } = useLanguage();

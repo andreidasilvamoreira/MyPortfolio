@@ -1,4 +1,4 @@
-import "../SectionSkills/style.css";
+import "./style.css";
 
 export default function SkillCategory({ title, skills, containerClass, titleClass }) {
     return (

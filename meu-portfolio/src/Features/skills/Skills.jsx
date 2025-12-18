@@ -1,6 +1,6 @@
-import "../SectionSkills/style.css";
+import "./style.css";
 import SkillCategory from "./Skill-component";
-import { useLanguage } from "../../Hooks/useLanguage";
+import { useLanguage } from "../../shared/Hooks/useLanguage";
 
 export default function Skills() {
     const { t } = useLanguage()

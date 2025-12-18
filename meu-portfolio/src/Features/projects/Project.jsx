@@ -1,6 +1,6 @@
 import "./style.css"
 import Card from "./card"
-import { useLanguage } from "../../Hooks/useLanguage"
+import { useLanguage } from "../../shared/Hooks/useLanguage"
 
 export default function Projects() {
     const { t } = useLanguage();

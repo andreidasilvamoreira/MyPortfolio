@@ -1,4 +1,4 @@
-import { useLanguage } from "../../Hooks/useLanguage"
+import { useLanguage } from "../../shared/Hooks/useLanguage"
 import "./style.css"
 
 export default function About() {

@@ -1,4 +1,4 @@
-import { translations } from "../i18n/translations";
+import { translations } from "../../i18n/translations";
 import { useState, useMemo, createContext } from "react";
 
 export const LanguageContext = createContext()

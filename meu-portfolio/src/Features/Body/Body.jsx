@@ -1,7 +1,7 @@
 import P from "./SubComponents/P-component"
 import A from "./SubComponents/A-component"
 import "../Body/style.css"
-import { useLanguage } from "../../Hooks/useLanguage";
+import { useLanguage } from "../../shared/Hooks/useLanguage";
 
 export default function Body() {
     const { t } = useLanguage();
