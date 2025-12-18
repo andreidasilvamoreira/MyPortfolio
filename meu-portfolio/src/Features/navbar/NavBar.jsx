@@ -13,11 +13,11 @@ export default function NavBar() {
                     <i className="fa-solid fa-house"></i>
                 </a>
                 <div className="navContent">
-                    <LanguageSelect />
                     <A href="#projetos" className="Projetos">{t.nav.projects}</A>
                     <A href="#skills" className="Skills">{t.nav.skills}</A>
                     <A href="#sobre" className="Sobre">{t.nav.about}</A>
                     <A href="#contato" className="Contato">{t.nav.contact}</A>
+                    <LanguageSelect />
                 </div>
             </div>
         </>
