@@ -99,7 +99,7 @@ export const translations = {
             },
 
             ecommerce: {
-                title: "Full Stack E-commerce",
+                title: "Full Stack Ecommerce",
                 description: "Cart, token-based authentication and product management"
             },
 

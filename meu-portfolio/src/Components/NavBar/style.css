@@ -47,3 +47,8 @@
     font-size: 3vh;
     cursor: pointer;
 }
+
+.selectLanguage {
+    background-color: #0A0A1A;
+    border: none;
+}

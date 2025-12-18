@@ -1,11 +1,14 @@
 import "../SectionSkills/style.css";
 import SkillCategory from "./Skill-component";
+import { useLanguage } from "../../Hooks/useLanguage";
 
 export default function Skills() {
+    const { t } = useLanguage()
+
     return (
         <section id="skills" className="pai-de-todos-skills">
             <div className="skill-div">
-                <h1 className="h1-skills">Habilidades Técnicas</h1>
+                <h1 className="h1-skills">{t.skills.title}</h1>
             </div>
 
             <div className="div-centralizar">
@@ -25,7 +28,7 @@ export default function Skills() {
                     />
 
                     <SkillCategory
-                        title="Banco de Dados"
+                        title={t.skills.sections.database}
                         skills={["MySQL", "SQLite"]}
                         className="div-banco-de-dados"
                         titleClass="banco-de-dados"
@@ -34,13 +37,13 @@ export default function Skills() {
 
                 <div className="softSkills">
                     <SkillCategory
-                        title="Metodologias e Boas Práticas"
+                        title={t.skills.sections.practices}
                         skills={["Scrum", "Kanban", "Padrão REST", "Clean Code"]}
                         className="div-metodologia"
                         titleClass="metodologia"
                     />
                     <SkillCategory
-                        title="Ferramentas"
+                        title={t.skills.sections.tools}
                         skills={[
                             "Git", "GitHub", "VSCode", "PhpStorm",
                             "Postman", "Insomnia", "MySQL Workbench"

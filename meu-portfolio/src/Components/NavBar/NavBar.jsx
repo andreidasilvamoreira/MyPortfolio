@@ -1,7 +1,11 @@
 import "./style.css"
 import A from "../Body/SubComponents/A-component"
+import { LanguageSelect } from "./SelectLanguage"
+import { useLanguage } from "../../Hooks/useLanguage";
 
 export default function NavBar() {
+    const { t } = useLanguage();
+
     return (
         <>
             <div className="nav-bar-pai">
@@ -9,10 +13,11 @@ export default function NavBar() {
                     <i className="fa-solid fa-house"></i>
                 </a>
                 <div className="navContent">
-                    <A href="#projetos" className="Projetos">Projetos</A>
-                    <A href="#skills" className="Skills">Habilidades</A>
-                    <A href="#sobre" className="Sobre">Sobre</A>
-                    <A href="#contato" className="Contato">Contatos</A>
+                    <LanguageSelect />
+                    <A href="#projetos" className="Projetos">{t.nav.projects}</A>
+                    <A href="#skills" className="Skills">{t.nav.skills}</A>
+                    <A href="#sobre" className="Sobre">{t.nav.about}</A>
+                    <A href="#contato" className="Contato">{t.nav.contact}</A>
                 </div>
             </div>
         </>

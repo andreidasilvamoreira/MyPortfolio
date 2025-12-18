@@ -1,33 +1,35 @@
 import "./style.css"
 import Card from "./card"
+import { useLanguage } from "../../Hooks/useLanguage"
 
 export default function Projects() {
+    const { t } = useLanguage();
 
     return (
         <>
             <section id="projetos" className="div-pai-de-todos-projetos">
-                <div className="div-h1"><h1 className="h1-projetos">Projetos</h1></div>
+                <div className="div-h1"><h1 className="h1-projetos">{t.projects.title}</h1></div>
                 <div className="div-pai-projetos">
-                    
+
                     <Card
-                        title="API de Restaurante"
-                        descricao="CRUD completo para pedidos, clientes e itens de menu"
+                        title={t.projects.restaurantApi.title}
+                        descricao={t.projects.restaurantApi.description}
                         skills={["Laravel", "MySQL"]}
-                        buttonText="Ver Projeto"
+                        buttonText={t.projects.actions.view}
                     ></Card>
 
                     <Card
-                        title="E-commerce Full Stack"
-                        descricao="Carrinho, login com token e gerenciamento de produtos"
+                        title={t.projects.ecommerce.title}
+                        descricao={t.projects.ecommerce.description}
                         skills={["Laravel", "React", "MySQL"]}
-                        buttonText="Ver Projeto"
+                        buttonText={t.projects.actions.view}
                     ></Card>
 
                     <Card
-                        title="API Biblioteca"
-                        descricao="Gerenciamento de livros, autores, categorias e validações"
+                        title={t.projects.libraryApi.title}
+                        descricao={t.projects.libraryApi.description}
                         skills={["Laravel"]}
-                        buttonText="Ver Projeto"
+                        buttonText={t.projects.actions.view}
                     ></Card>
                 </div>
             </section>

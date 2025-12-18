@@ -1,17 +1,19 @@
+import { useLanguage } from "../../Hooks/useLanguage";
 import Div, {DivAux} from "./div-links";
 import Form from "./formulario";
 import "./style.css";
 
 export function Contato() {
+    const { t } = useLanguage()
     return (
         <>
             <section id="contato" className="div-contato-pai-de-todos">
                 <div className="contato-pai">
                     <DivAux className="h1-contato" containerClass="contato" as="h1">
-                        Contato
+                        {t.contact.title}
                     </DivAux>
                     <DivAux className="p-contato" containerClass="div-contato">
-                        Se quiser conversar sobre projetos, ideias ou oportunidades, fique à vontade para entrar em contato.
+                        {t.contact.titleDescription}
                     </DivAux>
                 </div>
                 <div className="div-contato-form">
@@ -19,7 +21,7 @@ export function Contato() {
                         <Div title="LinkedIn:" className="linkedin" url="http://www.linkedin.com/in/andreidasilvamoreira" value="Andrei-da-Silva-Moreira" />
                         <Div title="GitHub:" className="github" url="https://github.com/andreidasilvamoreira" value="andreidasilvamoreira" />
                         <Div title="Email:" className="email" value="andreidasilvamoreira14@gmail.com" />
-                        <Div title="Telefone:" className="telefone" value="+55 62 99351-3125" />
+                        <Div title={t.contact.telephone} className="telefone" value="+55 62 99351-3125" />
                     </div>
                     <Form />
                 </div>
