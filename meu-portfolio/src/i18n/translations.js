@@ -20,19 +20,25 @@ export const translations = {
 
         projects: {
             title: "Projetos",
-            restaurantApi: {
-                title: "API de Restaurante",
-                description: "CRUD completo para pedidos, clientes e itens de menu"
+            scheduly: {
+                skills: ["Regras de negócio", "•", "Arquitetura backend", "•", "API REST", "•", "PHP", "Modelagem de dados", "•", "Autenticação"],
             },
 
             ecommerce: {
                 title: "E-commerce Full Stack",
-                description: "Carrinho, login com token e gerenciamento de produtos"
+                description: ["Plataforma de ecommerce com autenticação, gerenciamento de produtos e integração com API."]
             },
 
             libraryApi: {
                 title: "API Biblioteca",
-                description: "Gerenciamento de livros, autores, categorias e validações"
+                description: "Regras de empréstimo, controle de disponibilidade e persistência de dados",
+                skills: ["Rest API", "MySQL", "PHP"]
+            },
+
+            restaurant: {
+                title: "API Restaurante",
+                description: "API REST para restaurante com autenticação e pedidos.",
+                skills: ["CRUD", "Laravel", "MySQL"]
             },
 
             actions: {
@@ -75,7 +81,7 @@ export const translations = {
                 name: "Seu Nome",
                 email: "Seu Email",
                 message: "Escreva sua mensagem aqui",
-                send: "Enviar"
+                send: "Enviar Mensagem"
             }
         }
 
@@ -103,19 +109,39 @@ export const translations = {
         projects: {
             title: "Projects",
 
-            restaurantApi: {
-                title: "Restaurant API",
-                description: "Complete CRUD for orders, customers and menu items"
+            scheduly: {
+                skills: [
+                    "Business rules",
+                    "•",
+                    "Backend architecture",
+                    "•",
+                    "REST API",
+                    "•",
+                    "PHP",
+                    "•",
+                    "Data modeling",
+                    "•",
+                    "Authentication"
+                ]
             },
 
             ecommerce: {
-                title: "Full Stack Ecommerce",
-                description: "Cart, token-based authentication and product management"
+                title: "Full Stack E-commerce",
+                description: [
+                    "E-commerce platform with authentication, product management and API integration."
+                ]
             },
 
             libraryApi: {
                 title: "Library API",
-                description: "Management of books, authors, categories and validations"
+                description: "Loan rules, availability control and data persistence",
+                skills: ["REST API", "MySQL", "PHP"]
+            },
+
+            restaurant: {
+                title: "Restaurant API",
+                description: "Restaurant REST API with authentication and orders.",
+                skills: ["CRUD", "Laravel", "MySQL"]
             },
 
             actions: {
@@ -134,33 +160,35 @@ export const translations = {
 
         about: {
             title: "About Me",
-            subtitle: "For me, development is a conscious construction process, not just code that works.",
+            subtitle: "For me, development is conscious construction, not just working code.",
             description: [
-                "I approach software development as a process where organization, clarity, and technical responsibility are essential.",
-                "Before writing code, I seek to understand the problem, structure the solution properly, and think about the system’s maintenance and evolution over time."
+                "I see software development as a process where organization, clarity and technical responsibility are essential.",
+                "Before writing code, I focus on understanding the problem, structuring the solution and thinking about long-term maintenance and evolution."
             ],
 
             highlights: [
-                "Clean and well-organized code",
+                "Clean and organized code",
                 "Clear separation of responsibilities",
-                "Technical decisions made with long-term impact in mind"
+                "Technical decisions with long-term vision"
             ],
 
             closing:
-                "More than just making things work, I aim to deliver solid solutions that are easy to understand, maintain, and evolve."
-
+                "More than just making things work, I aim to deliver solid solutions that are easy to understand, maintain and evolve."
         },
 
         contact: {
             title: "Contact",
             titleDescription: "Let’s talk",
-            contactDescription: ["I’m open to junior developer or internship opportunities.", "If you’d like to talk, feel free to reach out through any of the channels below."],
+            contactDescription: [
+                "I’m open to junior developer or internship opportunities.",
+                "If you’d like to talk, feel free to reach out through any of the channels below."
+            ],
             telephone: "Phone",
             form: {
                 name: "Your Name",
                 email: "Your Email",
                 message: "Write your message here",
-                send: "Send"
+                send: "Send Message"
             }
         }
     }

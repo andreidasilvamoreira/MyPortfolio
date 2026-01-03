@@ -1,22 +1,25 @@
+/* Layout geral */
+
 .div-contato-pai-de-todos {
-    margin-bottom: 20vh;
-    margin-top: 30vh;
+    margin: 30vh 0 15vh;
 }
 
 .contato-pai {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
     width: 38%;
-    margin-left: 30vw;
-    margin-bottom: 8vh;
+    margin: 0 auto 5vh;
 }
 
 .div-contato-form {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 2.5vw;
 }
+
+/* Títulos e textos */
 
 .contato {
     font-size: 2rem;
@@ -24,7 +27,8 @@
 }
 
 .h1-contato {
-    font-weight: 400;
+    font-weight: 500;
+    color: #90abd3;
 }
 
 .div-contato {
@@ -35,13 +39,25 @@
 .p-contato {
     color: #c8c8c9;
     text-align: center;
+    position: relative;
 }
 
-.formulario-contato {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    gap: 1.5vh;
+.p-contato::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 2px;
+    margin: 12px auto 0;
+    background: linear-gradient(to right,
+            transparent,
+            rgba(120, 180, 255, 0.8),
+            transparent);
+}
+
+.description-contact {
+    font-size: 1.2em;
+    font-weight: 300;
+    margin-bottom: 2vh;
 }
 
 h4 {
@@ -49,43 +65,126 @@ h4 {
     font-weight: 500;
 }
 
-.link {
+
+/* Links de contato */
+
+.links-contato {
     display: flex;
     flex-direction: column;
-    gap: 1vh;
-    margin-bottom: 2vh;
-    font-size: 1.2rem;
+    width: 23vw;
+    height: 40vh;
+    padding: 2.5rem;
+    border-radius: 1vh;
+    border: 1px solid rgba(207, 207, 207, 0.15);
 }
 
-.link-linkedin,
-.link-github {
+.div {
+    width: 100%;
+    height: 6vh;
+    display: flex;
+    align-items: center;
+}
+
+.github,
+.linkedin,
+.link-email,
+.telefone {
+    display: flex;
+    align-items: center;
+    gap: .5em;
+    font-size: 1.5em;
     text-decoration: none;
+    color: #c8c8c9;
+
+    transition:
+        color 0.25s ease,
+        transform 0.25s ease;
 }
 
-.link-linkedin:hover {
-    color: #cacaca;
+.github:hover,
+.linkedin:hover,
+.link-email:hover,
+.telefone:hover {
+    color: #ffffff;
+    transform: translateX(4px);
 }
 
-.link-github:hover {
-    color: #cacaca;
+.github i,
+.linkedin i,
+.link-email i,
+.telefone i {
+    transition: inherit;
+    color: inherit;
 }
+
+.telefone {
+    margin-bottom: 0;
+}
+
+/* Linhas */
+
+.linha {
+    margin: 1vh 0 1.6vh;
+    border: 1px solid rgba(168, 168, 168, 0.479);
+
+    -webkit-mask-image: linear-gradient(to right,
+            black 0%,
+            black 40%,
+            transparent 60%);
+
+    mask-image: linear-gradient(to right,
+            black 0%,
+            black 10%,
+            transparent 100%);
+
+    filter: drop-shadow(0 0 6px rgba(120, 180, 255, 0.6));
+}
+
+.linha-1 {
+    width: 20%;
+}
+
+.linha-2 {
+    width: 40%;
+}
+
+.linha-3 {
+    width: 60%;
+}
+
+/* Formulário */
 
 .div-formulario {
-    border: 1px solid rgba(207, 207, 207, 0.15);
-    padding: 2.4vh;
-    height: 100%;
+    width: 23vw;
+    padding: 2.5rem 2.5rem 1rem;
     border-radius: 1vh;
-    width: 20vw;
+    border: 1px solid rgba(207, 207, 207, 0.15);
 }
+
+.formulario-contato {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+}
+
+/* input */
 
 .input {
     background-color: #111627;
     border: 1px solid rgba(207, 207, 207, 0.15);
-    padding: 1.4vh;
+    padding: 1.7vh;
     font-size: 1rem;
     border-radius: 1vh;
-    height: 100%;
+}
 
+.nome,
+.email,
+.mensagem {
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
 }
 
 .nome:focus,
@@ -97,51 +196,50 @@ h4 {
     box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.15);
 }
 
-.nome,
-.email,
-.mensagem {
-    transition-delay: 0.15s ease;
-    transition:
-        transform 0.3s ease,
-        border-color 0.3s ease,
-        box-shadow 0.3s ease;
+.nome::placeholder,
+.email::placeholder,
+.mensagem::placeholder {
+    color: white;
+    font-weight: 300;
 }
 
 .mensagem {
-    height: 10vh;
+    height: 15vh;
     resize: none;
-    text-align: left;
 }
+
+/* botão */
 
 .btn-enviar {
-    text-decoration: none;
-    background-color: #323246;
-    border-radius: 1vh;
+    width: 65%;
+    height: 5vh;
+    margin: 0 auto;
+
     border: none;
-    height: 4vh;
+    border-radius: 1vh;
     cursor: pointer;
+    font-size: 1em;
+    text-decoration: none;
+
+    background: linear-gradient(to bottom,
+            rgb(49, 84, 199),
+            rgb(11, 56, 204));
+
+    box-shadow:
+        0 0 12px rgba(80, 140, 255, 0.4),
+        inset 0 0 6px rgba(255, 255, 255, 0.15);
+
     transition:
-        transform 0.3s cubic-bezier(.4,0,.2,1),
+        transform 0.3s cubic-bezier(.4, 0, .2, 1),
         box-shadow 0.3s ease,
         background 0.3s ease;
 }
 
 .btn-enviar:hover {
-    background-color: #1e212e;
     transform: scale(1.03);
-    border-color: #2f3342;
-    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.15);
-}
+    background-color: #1e212e;
 
-.telefone {
-    margin-bottom: 0;
-}
-
-.telefone-link {
-    text-decoration: none;
-}
-
-.telefone-link:hover {
-    text-decoration: none;
-    color: #cacaca;
+    box-shadow:
+        0 0 20px rgba(80, 140, 255, 0.7),
+        inset 0 0 8px rgba(255, 255, 255, 0.2);
 }

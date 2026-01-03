@@ -16,16 +16,16 @@ export function Contato() {
                         {t.contact.titleDescription}
                     </DivAux>
                 </div>
-                <div className="div-contato-form">
+                <div className="card-contato div-contato-form">
                     <div className="links-contato">
                         {t.contact.contactDescription.map((description, index) => (
-                            <p key={index}>{description}</p>
+                            <p className="description-contact" key={index}>{description}</p>
                         ))}
 
-                        <Div classLink={"div-github"} className={"fa-brands fa-github"} link={"github"} url={"https://github.com/andreidasilvamoreira"} nome={"GitHub"} />
-                        <Div classLink={"div-linkedin"} className={"fa-brands fa-linkedin"} link={"linkedin"} url={"http://www.linkedin.com/in/andreidasilvamoreira"} nome={"Linkedin"} />
-                        <Div classLink={"div-email"} className={"fa-solid fa-envelope"} link={"email"} url={"https://mail.google.com/mail/?view=cm&to=andreidasilvamoreira14@gmail.com"} nome={"Email"} />
-                        <Div classLink={"div-telefone"} className={"fa-solid fa-phone"} link={"telefone"} url={"https://wa.me/5562993513125?text=Olá,%20vi%20seu%20portfólio%20e%20gostaria%20de%20conversar"} nome={t.contact.telephone} />
+                        <Div classLink={"div div-github"} linha="linha linha-1" className={"fa-brands fa-github"} link={"github"} url={"https://github.com/andreidasilvamoreira"} nome={"GitHub"} />
+                        <Div classLink={"div div-linkedin"} linha="linha linha-2" className={"fa-brands fa-linkedin"} link={"linkedin"} url={"http://www.linkedin.com/in/andreidasilvamoreira"} nome={"Linkedin"} />
+                        <Div classLink={"div div-email"} linha="linha linha-3" className={"fa-solid fa-envelope"} link={"link-email"} url={"https://mail.google.com/mail/?view=cm&to=andreidasilvamoreira14@gmail.com"} nome={"Email"} />
+                        <Div classLink={"div div-telefone"} className={"fa-solid fa-phone"} link={"telefone"} url={"https://wa.me/5562993513125?text=Olá,%20vi%20seu%20portfólio%20e%20gostaria%20de%20conversar"} nome={t.contact.telephone} />
                     </div>
                     <Form />
                 </div>

@@ -7,27 +7,31 @@
 }
 
 #projetos {
-        scroll-margin-top: 14vh;
+    scroll-margin-top: 14vh;
 
 }
+
 .h1-projetos {
     font-size: 4rem;
     font-weight: 400;
+    margin-bottom: 5vh;
 }
 
 .cards {
-    margin-top: 2rem;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-auto-rows: minmax(16rem, auto);
+    gap: 2rem;
     grid-template-areas:
-        "card-principal card-principal card-secundario card-secundario"
-        "card-principal card-principal card-one card-two";
-    gap: 2em;
-    margin-left: 25rem;
-    margin-right: 25rem;
-    height: 33rem;
+      "card-principal card-principal card-secundario card-secundario"
+      "card-principal card-principal card-one card-two";
+
+    max-width: 1200px;
+    width: 100%;
+    padding-inline: 2rem;
+    margin-inline: auto;
 }
+
 
 .card {
     padding: 3vh;
@@ -46,7 +50,6 @@
         transform 0.3s ease,
         border-color 0.3s ease,
         box-shadow 0.3s ease;
-
 }
 
 .button-ver-projeto {
@@ -62,7 +65,7 @@
 }
 
 .button-ver-projeto:hover {
-    transform: scale(1.1);
+    transform: scale(1.1);  
     background-color: #29468388;
     box-shadow: 0 0 0 1px rgb(2, 7, 10);
     transition-delay: 0.15s ease;
@@ -84,7 +87,8 @@
 /* card principal */
 .card-principal {
     grid-area: card-principal;
-    grid-row: span 2;
+    display: flex;
+    flex-direction: column;
     padding: 0;
     min-height: 24rem;
     position: relative;
@@ -97,6 +101,7 @@
 }
 
 .image {
+    flex-shrink: 0;
     height: 65%;
     background-image: url("/public/notebook.png");
     background-size: cover;
@@ -200,21 +205,21 @@
     background-color: #191e38;
 }
 
+.list-p {}
+
 .card h2 {
-    font-weight: 400;
-    font-size: 2rem;
+    font-weight: 500;
+    font-size: 1.8rem;
 }
-
-
 
 .list-principal {
     list-style-type: none;
     display: flex;
+    flex-wrap: wrap;
     gap: 1vh;
     padding: 0;
-    margin-top: 1vh;
-    margin-bottom: 1vh;
 }
+
 .button-ver-projeto {
     position: relative;
     overflow: hidden;
@@ -224,12 +229,10 @@
     content: "";
     position: absolute;
     inset: 0;
-    background: linear-gradient(
-        120deg,
-        transparent,
-        rgba(255,255,255,.25),
-        transparent
-    );
+    background: linear-gradient(120deg,
+            transparent,
+            rgba(255, 255, 255, .25),
+            transparent);
     transform: translateX(-100%);
     transition: transform .6s ease;
 }
